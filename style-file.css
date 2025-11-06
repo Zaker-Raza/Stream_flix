@@ -1,0 +1,424 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+/* ---------- MAIN BACKGROUND FIX ---------- */
+.main {
+  position: relative;
+  height: 90vh;
+}
+
+.main::before {
+  content: "";
+  background-image: url("assets/img/bg2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.65;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+nav,
+.hero {
+  position: relative;
+  z-index: 2;
+}
+
+/* ---------- NAVBAR ---------- */
+nav {
+  display: flex;
+  max-width: 60vw;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.text-logo{
+	font-family:'Babas Neue',;Arial Black,sans-serief;
+	font-weight:900;
+	font-size:32px;
+	color:#e50914;
+	text-transform: uppercase;
+	letter-spacing:1px;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+	width:10px;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
+  font-weight: bolder;
+}
+
+.hero span {
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  font-size: 1.8rem;
+  letter-spacing: 0.3px;
+}
+
+.hero > :first-child {
+  font-weight: bolder;
+  font-size: 26px;
+  text-align: center;
+}
+
+.hero > :nth-child(2) {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.hero :nth-child(3) {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.021);
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-red-sem {
+  background-color: #e50914;
+  color: white;
+}
+
+.second {
+  background-color: #e50914;
+  color: white;
+  padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+
+.main input {
+  padding: 7px 85px 8px 14px;
+  font-size: 12px;
+  font-weight: 900;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+  color: white;
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* ---------- SECTIONS ---------- */
+.sepration {
+  width: 100%;
+  height: 7px;
+  background-color: rgb(58, 58, 58);
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 60vw;
+  margin: auto;
+  align-items: center;
+  color: white;
+  gap:50px;
+}
+
+.secimg {
+  position: relative;
+  
+}
+
+.secimg img {
+  width: 300px;
+  margin-top: 40px;
+  margin-left: 40px;
+  gap:20px;
+}
+
+.secimg video {
+  position: absolute;
+  top: 51px;
+  right: -10px;
+  border: 5px solid gray;
+  width: 30vw;
+  margin-top: 35px;
+}
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+  height: 350px;
+  justify-content: center;
+}
+
+section.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+section.first > div :nth-child(2) {
+  font-size: 24px;
+}
+
+/* ---------- FAQ ---------- */
+.question {
+  background-color: black;
+  color: white;
+}
+
+.question h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 48px;
+}
+
+.faqbox {
+  transition: all 0.3s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 20px;
+  max-width: 60vw;
+  margin: 34px auto;
+  color: white;
+  cursor: pointer;
+  gap: 3px;
+}
+
+.faqbox:hover {
+  background-color: #414141;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 34px;
+}
+
+footer .Questions {
+  padding: 34px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+.footer a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+/* ---------- DROPDOWN ---------- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2d2d2d;
+  min-width: 100px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  top: 35px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 8px 12px;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #414141;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  nav {
+    max-width: 80vw;
+  }
+
+  .hero > :first-child {
+    font-size: 22px;
+  }
+
+  .hero :nth-child(2),
+  .hero :nth-child(3) {
+    font-size: 16px;
+  }
+
+  section.first {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .secimg img {
+    width: 60%;
+    margin: 20px auto;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    max-width: 90vw;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .hero > :first-child {
+    font-size: 20px;
+  }
+
+  .hero :nth-child(2),
+  .hero :nth-child(3) {
+    font-size: 14px;
+  }
+
+  .hero-button {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main input {
+    width: 80%;
+    padding: 10px;
+  }
+
+  section.first {
+    flex-direction: column;
+    max-width: 90vw;
+    text-align: center;
+  }
+
+  .secimg img {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .question h2 {
+    font-size: 32px;
+  }
+
+  .faqbox {
+    max-width: 90vw;
+    font-size: 18px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+/* Small mobile */
+@media screen and (max-width: 480px) {
+  nav img {
+    width: 100px;
+  }
+
+  .btn,
+  .btn-red-sem,
+  .second {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .hero > :first-child {
+    font-size: 18px;
+  }
+
+  .hero :nth-child(2),
+  .hero :nth-child(3) {
+    font-size: 12px;
+  }
+
+  .main input {
+    width: 90%;
+  }
+
+  .secimg img {
+    width: 90%;
+  }
+
+  .faqbox {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
